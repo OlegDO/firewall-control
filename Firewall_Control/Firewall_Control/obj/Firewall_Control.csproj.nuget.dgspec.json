@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Mi\\Documents\\бгуир 2 курс\\ксис\\kp\\firewall-control\\Firewall_Control\\Firewall_Control\\Firewall_Control.csproj": {}
+    "C:\\Users\\Mi\\Documents\\бгуир 2 курс\\ксис\\course project\\firewall-control\\Firewall_Control\\Firewall_Control\\Firewall_Control.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Mi\\Documents\\бгуир 2 курс\\ксис\\kp\\firewall-control\\Firewall_Control\\Firewall_Control\\Firewall_Control.csproj": {
+    "C:\\Users\\Mi\\Documents\\бгуир 2 курс\\ксис\\course project\\firewall-control\\Firewall_Control\\Firewall_Control\\Firewall_Control.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Mi\\Documents\\бгуир 2 курс\\ксис\\kp\\firewall-control\\Firewall_Control\\Firewall_Control\\Firewall_Control.csproj",
+        "projectUniqueName": "C:\\Users\\Mi\\Documents\\бгуир 2 курс\\ксис\\course project\\firewall-control\\Firewall_Control\\Firewall_Control\\Firewall_Control.csproj",
         "projectName": "Firewall_Control",
-        "projectPath": "C:\\Users\\Mi\\Documents\\бгуир 2 курс\\ксис\\kp\\firewall-control\\Firewall_Control\\Firewall_Control\\Firewall_Control.csproj",
+        "projectPath": "C:\\Users\\Mi\\Documents\\бгуир 2 курс\\ксис\\course project\\firewall-control\\Firewall_Control\\Firewall_Control\\Firewall_Control.csproj",
         "packagesPath": "C:\\Users\\Mi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Mi\\Documents\\бгуир 2 курс\\ксис\\kp\\firewall-control\\Firewall_Control\\Firewall_Control\\obj\\",
+        "outputPath": "C:\\Users\\Mi\\Documents\\бгуир 2 курс\\ксис\\course project\\firewall-control\\Firewall_Control\\Firewall_Control\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

@@ -13,3 +13,18 @@ C:\Users\Mi\Documents\бгуир 2 курс\ксис\kp\firewall-control\Firewal
 C:\Users\Mi\Documents\бгуир 2 курс\ксис\kp\firewall-control\Firewall_Control\Firewall_Control\bin\Debug\netcoreapp3.1\ConsoleUtilities.dll
 C:\Users\Mi\Documents\бгуир 2 курс\ксис\kp\firewall-control\Firewall_Control\Firewall_Control\obj\Debug\netcoreapp3.1\Firewall_Control.csproj.CopyComplete
 C:\Users\Mi\Documents\бгуир 2 курс\ксис\kp\firewall-control\Firewall_Control\Firewall_Control\obj\Debug\netcoreapp3.1\Firewall_Control.csproj.CoreCompileInputs.cache
+C:\Users\Mi\Documents\бгуир 2 курс\ксис\course project\firewall-control\Firewall_Control\Firewall_Control\bin\Debug\netcoreapp3.1\Firewall_Control.exe
+C:\Users\Mi\Documents\бгуир 2 курс\ксис\course project\firewall-control\Firewall_Control\Firewall_Control\bin\Debug\netcoreapp3.1\Firewall_Control.deps.json
+C:\Users\Mi\Documents\бгуир 2 курс\ксис\course project\firewall-control\Firewall_Control\Firewall_Control\bin\Debug\netcoreapp3.1\Firewall_Control.runtimeconfig.json
+C:\Users\Mi\Documents\бгуир 2 курс\ксис\course project\firewall-control\Firewall_Control\Firewall_Control\bin\Debug\netcoreapp3.1\Firewall_Control.runtimeconfig.dev.json
+C:\Users\Mi\Documents\бгуир 2 курс\ксис\course project\firewall-control\Firewall_Control\Firewall_Control\bin\Debug\netcoreapp3.1\Firewall_Control.dll
+C:\Users\Mi\Documents\бгуир 2 курс\ксис\course project\firewall-control\Firewall_Control\Firewall_Control\bin\Debug\netcoreapp3.1\Firewall_Control.pdb
+C:\Users\Mi\Documents\бгуир 2 курс\ксис\course project\firewall-control\Firewall_Control\Firewall_Control\bin\Debug\netcoreapp3.1\ConsoleUtilities.dll
+C:\Users\Mi\Documents\бгуир 2 курс\ксис\course project\firewall-control\Firewall_Control\Firewall_Control\obj\Debug\netcoreapp3.1\Firewall_Control.csprojAssemblyReference.cache
+C:\Users\Mi\Documents\бгуир 2 курс\ксис\course project\firewall-control\Firewall_Control\Firewall_Control\obj\Debug\netcoreapp3.1\Firewall_Control.AssemblyInfoInputs.cache
+C:\Users\Mi\Documents\бгуир 2 курс\ксис\course project\firewall-control\Firewall_Control\Firewall_Control\obj\Debug\netcoreapp3.1\Firewall_Control.AssemblyInfo.cs
+C:\Users\Mi\Documents\бгуир 2 курс\ксис\course project\firewall-control\Firewall_Control\Firewall_Control\obj\Debug\netcoreapp3.1\Firewall_Control.csproj.CoreCompileInputs.cache
+C:\Users\Mi\Documents\бгуир 2 курс\ксис\course project\firewall-control\Firewall_Control\Firewall_Control\obj\Debug\netcoreapp3.1\Firewall_Control.csproj.CopyComplete
+C:\Users\Mi\Documents\бгуир 2 курс\ксис\course project\firewall-control\Firewall_Control\Firewall_Control\obj\Debug\netcoreapp3.1\Firewall_Control.dll
+C:\Users\Mi\Documents\бгуир 2 курс\ксис\course project\firewall-control\Firewall_Control\Firewall_Control\obj\Debug\netcoreapp3.1\Firewall_Control.pdb
+C:\Users\Mi\Documents\бгуир 2 курс\ксис\course project\firewall-control\Firewall_Control\Firewall_Control\obj\Debug\netcoreapp3.1\Firewall_Control.genruntimeconfig.cache

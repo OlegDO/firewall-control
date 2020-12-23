@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "xixND4oQHi0BQ0HJjlmrkIds7xWtHhJCRCeuFqpQsv2fIl0/GXHFlg/s8Yz53MD/OjJHAMu1ckWgTn0HgN2L3Q==",
+  "dgSpecHash": "LLFZcvSK9wrYvC10QEjGyP+V9Ib2JF2LZZ6v0EyyRDtGqDEtz2KSuVGc0ybhsdAGHKqzZwdz6z4r2rm3yJehfQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Mi\\Documents\\бгуир 2 курс\\ксис\\kp\\firewall-control\\Firewall_Control\\Firewall_Control\\Firewall_Control.csproj",
+  "projectFilePath": "C:\\Users\\Mi\\Documents\\бгуир 2 курс\\ксис\\course project\\firewall-control\\Firewall_Control\\Firewall_Control\\Firewall_Control.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Mi\\.nuget\\packages\\basicconsoleutilities\\1.0.0.6\\basicconsoleutilities.1.0.0.6.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.app\\2.1.0\\microsoft.netcore.app.2.1.0.nupkg.sha512",

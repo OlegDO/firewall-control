@@ -76,41 +76,44 @@ namespace Firewall_Control
                new ConsoleNavigationItem("Create rule", (i, item) => {
                   
                    // Задание правилу профиля
-                   string profile = ConsoleWriter.Default.PrintQuestion("Enter type of profile: ");
-                   if(profile == "Public" || profile == "Domain" || profile == "Private")
+                   string profile = ConsoleWriter.Default.PrintQuestion("Enter type of profile");
+                   if(profile.ToUpper() == "PUBLIC" || profile.ToUpper() == "DOMAIN" || profile.ToUpper() == "PRIVATE")
                    {
                        FirewallProfiles firewallProfile = FirewallProfiles.Public;
-                       if(profile == "Public")
+                       if(profile.ToUpper() == "PUBLIC")
                        {
                            firewallProfile = FirewallProfiles.Public;
-                       } else if(profile == "Domain")
+                       }
+
+                       if(profile.ToUpper() == "DOMAIN")
                        {
                            firewallProfile = FirewallProfiles.Domain;
-                       } else if(profile == "Private")
+                       }
+
+                       if(profile.ToUpper() == "PRIVATE")
                        {
                            firewallProfile = FirewallProfiles.Private;
-                       } 
-
-                       // Имя правила
-                       string name = ConsoleWriter.Default.PrintQuestion("Enter name of rule: ");
+                       }
                        
-                       // Тип доступа
-                       FirewallAction firewallaction = FirewallAction.Block;
-                       string action = ConsoleWriter.Default.PrintQuestion("Enter type of acces: ");
-                       if(action == "Allow" || action == "Block")
+                       // Имя правила
+                       string name = ConsoleWriter.Default.PrintQuestion("Enter name of rule");
+                       if(name != "")
                        {
-                           if(action == "Allow")
+                            // Тип доступа
+                       FirewallAction firewallaction = FirewallAction.Block;
+                       string action = ConsoleWriter.Default.PrintQuestion("Enter type of acces");
+                       if(action.ToUpper() == "ALLOW" || action.ToUpper() == "BLOCK")
+                       {
+                           if(action.ToUpper() == "ALLOW")
                        {
                            firewallaction = FirewallAction.Allow;
-                       } else if (action == "Block")
+                       }
+                               if (action.ToUpper() == "BLOCK")
                        {
                            firewallaction = FirewallAction.Block;
-                       } else
-                       {
-                           ConsoleWriter.Default.PrintError("This type of acces is invalid");
-
                        }
-                           string fullPath = ConsoleWriter.Default.PrintQuestion("Enter full path of exe file: ");
+
+                           string fullPath = ConsoleWriter.Default.PrintQuestion("Enter full path of exe file");
 
                            var rule = firewallInstance.CreateApplicationRule(
                             firewallProfile,
@@ -121,7 +124,16 @@ namespace Firewall_Control
                         rule.Direction = FirewallDirection.Outbound;
                         firewallInstance.Rules.Add(rule);
                         ConsoleWriter.Default.PrintSuccess("Rule successfully aded");
+                       } else
+                           {
+                           ConsoleWriter.Default.PrintError("This type of acces is invalid");
+
                        }
+                       } else
+                       {
+                           ConsoleWriter.Default.PrintError("This name of rule is invalid");
+                       }
+
                    } else
                        {
                            ConsoleWriter.Default.PrintError("This profile name is invalid");
@@ -129,25 +141,86 @@ namespace Firewall_Control
 
                     ConsoleWriter.Default.PrintMessage("Press any key to get one step back.");
                     
-                    // Возврат
+                    // Вsозврат
                     Console.ReadKey();
                 }),
               new ConsoleNavigationItem("Create port rule", (i, item) => {
+                  string name = ConsoleWriter.Default.PrintQuestion("Enter name of port rule");
+                  if(name != "")
+                  {
+                     string action = ConsoleWriter.Default.PrintQuestion("Enter type of access");
+                     FirewallAction firewallAction = FirewallAction.Block;
 
-                    ConsoleWriter.Default.PrintMessage("Press any key to get one step back.");
-                     var rule = firewallInstance.CreatePortRule(
-                            @"Port 80",
-                            FirewallAction.Allow,
-                            80,
-                            FirewallProtocol.TCP
+                      if(action.ToUpper() == "ALLOW" || action.ToUpper() == "BLOCK")
+                      {
+                          if(action.ToUpper() == "ALLOW")
+                          {
+                              firewallAction = FirewallAction.Allow;
+                          }
+
+                          if(action.ToUpper() == "BLOCK")
+                          {
+                              firewallAction = FirewallAction.Block;
+                          }
+
+                            string port = ConsoleWriter.Default.PrintQuestion("Enter port");
+                            ushort finallyPort = Convert.ToUInt16(port);
+                            string protocol = ConsoleWriter.Default.PrintQuestion("Enter protocol");
+                          FirewallProtocol firewallProtocol = FirewallProtocol.TCP;
+
+                             if(protocol.ToUpper() == "UDP" || protocol.ToUpper() == "TCP")
+                          {
+                              if(protocol.ToUpper() == "UDP")
+                              {
+                                  firewallProtocol = FirewallProtocol.UDP;
+                              }
+
+                              if(protocol.ToUpper() == "TCP")
+                              {
+                                  firewallProtocol = FirewallProtocol.TCP;
+                              }
+                              var rule = firewallInstance.CreatePortRule(
+                            @$"{name}",
+                            firewallAction,
+                            finallyPort,
+                            firewallProtocol
                         );
-            firewallInstance.Rules.Add(rule);
+                        firewallInstance.Rules.Add(rule);
+                              ConsoleWriter.Default.PrintSuccess("Protocol rule successfully aded");
+                          } else {
+                           ConsoleWriter.Default.PrintError("This protocol is invalid");
+                      }
+
+                      } else
+                      {
+                           ConsoleWriter.Default.PrintError("This type of acces is invalid");
+                      }
+
+                  } else
+                  {
+                      ConsoleWriter.Default.PrintError("This name of port rule is invalid");
+                  }
+                    
                     // Возврат
                     Console.ReadKey();
-                })
+                }),
+              new ConsoleNavigationItem("Delete rule", (i, item) => {
+                  string deleted = ConsoleWriter.Default.PrintQuestion("Enter name of rule");
+                   var rule = firewallInstance.Rules.SingleOrDefault(r => r.Name == deleted);
+                       if (rule != null)
+                        {
+                            firewallInstance.Rules.Remove(rule);
+                                ConsoleWriter.Default.PrintSuccess("Rule was successfully deleted");
+                        } else
+                  {
+                      ConsoleWriter.Default.PrintError("This name rule is invalid");
+                  }
+
+              })
             }, "Select an execution path.");
 
 
         }
     }
 }
+
